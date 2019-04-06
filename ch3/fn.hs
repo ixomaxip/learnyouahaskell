@@ -16,3 +16,9 @@ charName :: Char -> String
 charName 'a' = "Albert"
 charName 'b' = "Bob"
 charName 'c' = "Cherry"
+
+addVects' :: (Double, Double) -> (Double, Double) -> (Double, Double)
+addVects' a b = (fst a + fst b, snd a + snd b)
+
+addVects :: (Double, Double) -> (Double, Double) -> (Double, Double)
+addVects (x1, y1) (x2, y2) = (x1 + x2, y1 + y2)

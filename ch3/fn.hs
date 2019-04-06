@@ -22,3 +22,19 @@ addVects' a b = (fst a + fst b, snd a + snd b)
 
 addVects :: (Double, Double) -> (Double, Double) -> (Double, Double)
 addVects (x1, y1) (x2, y2) = (x1 + x2, y1 + y2)
+
+-- Triple fst & snd
+first :: (a,b,c) -> a
+first (x,_,_) = x
+
+second :: (a,b,c) -> b
+second (_,y,_) = y
+
+third :: (a,b,c) -> c
+third (_,_,z) = z
+
+
+
+
+
+

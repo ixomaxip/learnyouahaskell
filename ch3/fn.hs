@@ -43,5 +43,8 @@ tell (x:[]) = "The list has one element: " ++ show x
 tell (x:y:[]) = "The list has two elements: " ++ show x ++ " and " ++ show y
 tell (x:y:_) = "The list has more then two elements, but first is: " ++ show x ++ " and second is " ++ show y
 
+firstLetter :: String -> String
+firstLetter "" = "Empty string"
+firstLetter all@(x:xs) = "The first letter of " ++ all ++ " is " ++ [x]
 
 

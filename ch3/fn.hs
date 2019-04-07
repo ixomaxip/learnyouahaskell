@@ -47,4 +47,12 @@ firstLetter :: String -> String
 firstLetter "" = "Empty string"
 firstLetter all@(x:xs) = "The first letter of " ++ all ++ " is " ++ [x]
 
+--body mass index
+bmiTell :: Double -> String
+bmiTell bmi
+    | bmi <= 18.5 = "You are so drishch"
+    | bmi <= 25.0 = "You are norm but ugly anyway"
+    | bmi <= 30.0 = "FAAAAT"
+    | otherwise = "You have your own gravitation!"
+
 
